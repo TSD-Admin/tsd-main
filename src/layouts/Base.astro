@@ -1,5 +1,4 @@
 ---
-// (unchanged)
 import "../styles/global.css"
 
 const { 
@@ -8,10 +7,24 @@ const {
   url = 'https://www.threesparksdigital.sg'
 } = Astro.props;
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- (unchanged head) -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      { title }
+    </title>
+    <meta name="description" content={ description } />
+    <link rel="canonical" href={ url } />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/logo_favicon.svg" />
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={ title } />
+    <meta property="og:description" content={ description } />
+    <meta property="og:url" content={ url } />
   </head>
   <body>
     <header class="header">
@@ -49,8 +62,8 @@ const {
     </footer>
 
     <!-- Scripts -->
-    <script src="/src/scripts/scroll.js" type="module"></script>
+    <script src="/js/scroll.js" type="module"></script>
     <!-- NEW: mobile nav script -->
-    <script src="/src/scripts/nav.js" type="module"></script>
+    <script src="/js/nav.js" type="module"></script>
   </body>
 </html>
