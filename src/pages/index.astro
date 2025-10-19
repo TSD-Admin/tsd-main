@@ -147,7 +147,13 @@ import Base from "../layouts/Base.astro";
                 <label for="message">Project details</label>
                 <textarea class="textarea" id="message" name="message" required></textarea>
               </div>
-              <button class="button" type="submit">Submit</button>
+			  <div class="priv-submit">
+				<p class="privacy-note">
+					By submitting this form, you agree to our 
+					<a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+				</p>
+				<button class="button" type="submit">Submit</button>
+			  </div>
             </form>
           </div>
           <div class="coy-card">
